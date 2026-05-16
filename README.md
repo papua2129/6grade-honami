@@ -22,7 +22,8 @@
 - `index.html`: 問題演習ページ
 - `answers.html`: 模範回答ページ
 - `print.html`: A4印刷用ページ
-- `data.js`: 教科・問題・参照資料データ
+- `data.js`: 分割した問題データを復元するローダー
+- `data-chunk-01.js` から `data-chunk-15.js`: 教科・問題・参照資料データ
 - `script.js`: 問題演習ページの操作
 - `print.js`: 模範回答ページと印刷用ページの表示
 - `styles.css`: 画面表示と印刷用スタイル
@@ -39,4 +40,4 @@
 
 ## GitHub
 
-保存予定のリポジトリ名は `6nen-gakushu-site` です。初回はprivate repositoryとして作成し、`main` ブランチに直接保存する想定です。
+保存先のリポジトリは `papua2129/6grade-honami` です。
