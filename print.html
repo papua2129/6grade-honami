@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>印刷用プリント | 小学校6年生 学習プリント</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header no-print">
+      <a class="brand" href="index.html" aria-label="小学校6年生 学習プリント">
+        <span class="brand-mark" aria-hidden="true">6</span>
+        <span>
+          <span class="brand-title">小学校6年生 学習プリント</span>
+          <span class="brand-subtitle">印刷用</span>
+        </span>
+      </a>
+      <nav class="top-nav" aria-label="ページ">
+        <a href="index.html">問題</a>
+        <a href="print.html" aria-current="page">プリント</a>
+        <a href="answers.html">模範回答</a>
+      </nav>
+    </header>
+
+    <main class="print-shell">
+      <section class="print-controls no-print" aria-label="印刷設定">
+        <div>
+          <p class="eyebrow">Print</p>
+          <h1>印刷用プリント</h1>
+        </div>
+        <div class="print-control-grid">
+          <label>
+            <span class="field-label">教科</span>
+            <select id="printSubject" class="select"></select>
+          </label>
+          <label>
+            <span class="field-label">形式</span>
+            <select id="printMode" class="select">
+              <option value="questions">問題</option>
+              <option value="answers">解答</option>
+            </select>
+          </label>
+          <button type="button" class="control-button solid" id="printButton">印刷</button>
+        </div>
+      </section>
+
+      <section id="printPages" class="print-pages" aria-label="印刷プレビュー"></section>
+    </main>
+
+    <script src="data.js"></script>
+    <script src="print.js"></script>
+  </body>
+</html>
